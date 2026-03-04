@@ -1,0 +1,717 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        body{
+           
+           
+            background-color: #171717;
+            color:#fff ;
+            opacity: 0.8;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        header{
+            display: flex;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px;
+            background-color: #0146c7;
+            letter-spacing: 3px;
+           
+            
+        }
+
+        .logo{
+           
+            width: 50px;
+            
+        }
+
+        .logo-olimpo {
+            display: flex;       
+            align-items: center;
+            
+        }
+
+        .logo {
+            width: 50px;
+            display: block;      /* Remove espaços extras abaixo da imagem */
+        }
+
+        .nome-marca{
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+            
+        }
+
+        .nome-marca:hover{
+            color: #fab91d;
+            transition: ease-in-out 0.5s;
+        }
+
+        li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: #fab91d;
+             transition: ease-in-out 0.5s;
+             
+        }
+
+        .section-inicial{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: rgba(1, 70, 199, 0.9); /* Azul com transparência */
+    backdrop-filter: blur(10px); /* Efeito de vidro embaçado */
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #fab91d;
+    transition: all 0.3s ease;
+}
+
+/* Ajuste para o conteúdo não sumir debaixo do header fixo */
+body {
+    padding-top: 80px;
+}
+
+.logo-olimpo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    width: 45px;
+    filter: drop-shadow(0 0 5px rgba(250, 185, 29, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.logo-olimpo:hover .logo {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.nome-marca {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    margin-left: 0; /* Limpando margin anterior */
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Efeito da linha subindo ao passar o mouse */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fab91d;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fab91d;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Estilização de um botão de destaque (Opcional) */
+.btn-contato {
+    background-color: #fab91d;
+    color: #000 !important;
+    padding: 8px 20px !important;
+    border-radius: 5px;
+    font-weight: bold !important;
+}
+
+.btn-contato:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-contato::after {
+    display: none; /* Remove a linha do botão */
+}
+
+        .section-left {
+            display: flex;
+            justify-content: center; /* Centraliza o bloco todo na tela */
+            align-items: center;     /* Alinha imagem e texto na mesma altura */
+            gap: 20px;               /* Cria um espaço entre a imagem e o texto */
+            margin-top: 20px;
+        }
+
+        
+        .sobre-nos{
+            background-color: #2f303266;
+            color: #fff;
+            display: flex;
+            justify-content: 
+            center;
+            flex-direction: column;
+            margin: 30px;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.3;
+            font-family: 'Courier New', Courier, monospace;
+            width: 55%; 
+            height: auto; 
+            border-radius: 10px;
+            
+           
+        }
+
+    
+        .card-sobre-nos{
+            display: flex;
+            justify-content: right;
+        }
+
+        .imagem-olimpo{
+            border-radius: 20px;
+            opacity: 0.9;
+            max-width: 450px;
+            height: auto;
+           
+        }
+
+        .informacao-sobre-nos{
+            margin-left: 15px;
+            padding-top: 20px;
+           
+           
+        }
+
+/* GALERIA DE FOTOS */
+
+.galeria-section {
+    padding: 60px 20px;
+    background-color: #1a1a1a; /* Um leve contraste com o fundo principal */
+}
+
+.subtitulo {
+    text-align: center;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-galeria {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Efeito de Overlay (Legenda que aparece) */
+.overlay-galeria {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(1, 70, 199, 0.9));
+    height: 0; /* Começa escondido */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease;
+}
+
+.overlay-galeria span {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Efeitos de Hover */
+.item-galeria:hover img {
+    transform: scale(1.1); /* Zoom na imagem */
+}
+
+.item-galeria:hover .overlay-galeria {
+    height: 40%; /* Mostra a legenda */
+}
+
+.item-galeria:hover {
+    border-color: #fab91d; /* Borda dourada no foco */
+}
+
+/*____________________________ TIMELINE__________________________________ */
+/* Título da Seção */
+.titulo-timeline {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 50px 0;
+    color: #fab91d;
+}
+
+/* Container Principal */
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* A Linha Vertical Central */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #0146c7;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px; /* Centraliza a linha */
+}
+
+/* Cada Bloco da Timeline */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%; /* Ocupa metade da tela */
+}
+
+/* Alinhamento alternado (Esquerda/Direita) */
+.timeline-item:nth-child(odd) { left: 0; text-align: right; }
+.timeline-item:nth-child(even) { left: 50%; text-align: left; }
+
+/* O Ponto (Bolinha) na linha */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px; /* Gruda na linha */
+    background-color: #fab91d;
+    border: 4px solid #0146c7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Ajuste da bolinha para os itens da direita */
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+/* Estilo do Conteúdo */
+.timeline-date {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: #fab91d;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #2f303266;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+.timeline-content h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+}
+
+/*__________________ NOSSAS CONQUISTAS_________________________ */
+/* Título da Seção (Reutilizando estilo se quiser) */
+.titulo-sessao {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 60px 0 30px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Grid de Conquistas */
+.container-conquistas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 40px 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card Individual */
+.card-conquista {
+    background-color: #2f303266; /* Mesmo fundo semitransparente que você usou */
+    border-bottom: 4px solid #0146c7; /* Linha azul embaixo */
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.card-conquista:hover {
+    transform: translateY(-10px);
+    background-color: #2f3032aa;
+    border-bottom: 4px solid #fab91d; /* Muda para dourado no hover */
+}
+
+.icone-trofeu {
+    font-size: 50px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card-conquista h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    color: #fab91d;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.card-conquista p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+/* ______________________MEMBROS____________________________ */
+/* Título e Subtítulo */
+.membros-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.subtitulo-membros {
+    font-family: 'Roboto', sans-serif;
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/* Container de Membros */
+.container-membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Individual */
+.card-membro {
+    background-color: #2f303244;
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    transition: all 0.4s ease;
+}
+
+.card-membro:hover {
+    background-color: #2f303299;
+    border-color: #0146c7;
+    transform: scale(1.05);
+}
+
+/* Estilo da Foto */
+.foto-membro {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0146c7;
+    box-shadow: 0 0 15px rgba(1, 70, 199, 0.3);
+}
+
+.foto-membro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Textos do Card */
+.card-membro h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card-membro span {
+    display: block;
+    color: #fab91d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-membro p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/*_____________________ FOOTER _______________________*/
+footer {
+    background-color: #0a0a0a; /* Um pouco mais escuro que o body */
+    border-top: 2px solid #0146c7;
+    padding: 50px 0 20px 0;
+    margin-top: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-box h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fab91d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-box p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    margin-left: 0; /* Remove o margin que você tinha nas LIs globais */
+    display: block;
+}
+
+.footer-box ul li a {
+    color: #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #fab91d;
+    padding-left: 5px;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    background: #0146c7;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: #fab91d;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Parte de baixo */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+
+@media (max-width: 768px) {
+    /* Ajuste do Header */
+    header {
+        padding: 15px 20px;
+        flex-direction: column; /* Logo em cima, menu embaixo */
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap; /* Permite que o menu quebre em duas linhas se necessário */
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Diminui a fonte do menu */
+    }
+
+    /* Ajuste da Seção Sobre Nós */
+    .section-left {
+        flex-direction: column; /* Imagem e texto empilhados */
+        padding: 20px;
+    }
+
+    .sobre-nos {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .card-sobre-nos {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Ajuste da Timeline (Transforma em uma linha única lateral) */
+    .timeline-container::after {
+        left: 31px; /* Move a linha para a esquerda */
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left !important;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-dot {
+        left: 21px !important;
+        right: auto;
+    }
+
+    /* Ajuste da Galeria */
+    .grid-galeria {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    /* Ajuste do Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer-box {
+        padding-right: 0;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+}
+
+/* Ajustes extras para telas muito pequenas (iPhone SE, etc) */
+@media (max-width: 480px) {
+    .nome-marca {
+        font-size: 22px;
+    }
+    
+    .titulo-sessao, .titulo-timeline {
+        font-size: 32px;
+    }
+
+    .btn-contato {
+        padding: 5px 10px !important;
+    }
+}
